@@ -39,7 +39,7 @@
   <tbody>
     <?php 
          include "confing/bd.php";
-         $query = listar('hola');
+         $query = listar();
          $enumeracion = 0;
          while($datos = mysqli_fetch_assoc($query)){
                $enumeracion++;

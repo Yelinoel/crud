@@ -41,7 +41,7 @@ function actualizar ($id, $nombre, $email, $foto){
 }
 
 function actualizarSinfoto ($id, $nombre, $email){
-     $sql = "UPDATE Alumno set nombre='$nombre', email='$email',  WHERE id=$id";
+    $sql = "UPDATE Alumno set nombre='$nombre', email='$email'  WHERE id=$id";
      $query = mysqli_query(conexion(),$sql);
      return $query;
 }
